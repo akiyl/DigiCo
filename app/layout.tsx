@@ -7,14 +7,18 @@ const inter = Inter({ subsets: ["latin"] });
 
 const MainLayout = async ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="h-full  ">
-      <div className=" mt-4 fixed w-full">
-        <NavigationLayout />
-      </div>
-      <div className="">
-        <main className=" h-full">{children}</main>
-      </div>
-    </div>
+    <html>
+      <body>
+        <div className="h-full  ">
+          <div className=" mt-4 fixed w-screen z-40">
+            <NavigationLayout />
+          </div>
+          <div className="">
+            <main className=" h-full">{children}</main>
+          </div>
+        </div>
+      </body>
+    </html>
   );
 };
 

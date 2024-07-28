@@ -8,25 +8,28 @@ const NavigationLayout = () => {
             <span className="leading-[10px]">old</span>
             <span>cat</span>
           </div>
-          <div className="flex gap-1 text-white text-center  uppercase">
+          <div className="flex gap-2 text-[#343a40] text-center  uppercase">
             {" "}
-            <div className=" border  px-[12px] py-[4px] rounded-md border-b-2 backdrop-blur-sm bg-white/10">
+            <div className=" border  px-[14px] py-[4px] rounded-md text-sm border-b-2 backdrop-blur-sm bg-white/25 shadow-md">
               About
             </div>
-            <div className=" border  px-[12px] py-[4px] rounded-md border-b-2 backdrop-blur-sm bg-white/10">
+            <div className=" border  px-[14px] py-[4px] text-sm rounded-md border-b-2 backdrop-blur-sm bg-white/25 shadow-md">
               Cats
             </div>
-            <div className=" border  px-[12px] py-[4px] rounded-md border-b-2 backdrop-blur-sm bg-white/10">
+            <div className=" border text-sm   px-[14px] py-[4px]  rounded-md border-b-2 backdrop-blur-sm bg-white/25 shadow-md">
               Dogs
             </div>
-            <div className=" border whitespace-nowrap px-[12px] py-[4px] rounded-md border-b-2 backdrop-blur-sm bg-white/20">
+            <div className=" border whitespace-nowrap px-[14px] text-sm py-[4px] rounded-md border-b-2 backdrop-blur-sm bg-white/20 shadow-md">
               Home Hospitals
             </div>
-            <div className=" border  px-[12px] py-[4px] rounded-md border-b-2 backdrop-blur-sm bg-white/10">
+            <div className=" border  px-[14px] py-[4px] rounded-md border-b-2 text-sm backdrop-blur-sm bg-white/10 shadow-md">
               Contacts
             </div>
           </div>
-          <div className=" text-center text-white px-3 py-2 rounded-md backdrop-blur-sm bg-white/25 w-[100px] justify-self-end">
+          <div
+            className=" text-center text-[#343a40]
+           px-3 py-2 rounded-md backdrop-blur-sm bg-white/25 w-[100px] justify-self-end shadow-md"
+          >
             {" "}
             Help us
           </div>
