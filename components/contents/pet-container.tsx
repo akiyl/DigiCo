@@ -19,17 +19,23 @@ const PetCOntainer = ({
 }: PetContainerProps) => {
   return (
     <div id={id}>
-      <div
-        className=" h-[550px] bg-center  no-repeat bg-cover "
-        style={{ backgroundImage: `url(${imageUrl})` }}
-      >
-        <div className="capitalize text-white text-6xl pt-20  text-center ">
-          {name}
-        </div>
+      <div className="bg-black ">
+        <Link href={`/pets/${id}`}>
+          <div
+            className=" h-[59vh] bg-center    no-repeat bg-cover "
+            style={{ backgroundImage: `url(${imageUrl})` }}
+          >
+            <div className="capitalize text-white text-8xl pt-40 pl-40   ">
+              {name}
+            </div>
 
-        {/* <img src={imageUrl} alt="" /> */}
-        {/* <p>{description}</p> */}
-        {/* <h6> {status}</h6> */}
+            <div>
+              <p className=" text-2xl pl-40 pt-20 text-white ">{description}</p>
+            </div>
+            {/* <p>{description}</p> */}
+            {/* <h6> {status}</h6> */}
+          </div>
+        </Link>
       </div>
     </div>
   );

@@ -1,18 +1,22 @@
+import Link from "next/link";
 const NavigationLayout = () => {
   return (
     <>
       <nav className=" bg-transparent">
         <div className=" grid  grid-cols-3 justify-between mx-6 items-center uppercase">
-          <div className=" text-lg grid font-bold">
+          <Link href="/" className=" text-lg grid font-bold">
             {" "}
             <span className="leading-[10px]">old</span>
             <span>cat</span>
-          </div>
+          </Link>
           <div className="flex gap-2 text-[#343a40] text-center  uppercase">
             {" "}
-            <div className=" border  px-[14px] py-[4px] rounded-md text-sm border-b-2 backdrop-blur-sm bg-white/25 shadow-md">
+            <Link
+              href="/about"
+              className=" border  px-[14px] py-[4px] rounded-md text-sm border-b-2 backdrop-blur-sm bg-white/25 shadow-md"
+            >
               About
-            </div>
+            </Link>
             <div className=" border  px-[14px] py-[4px] text-sm rounded-md border-b-2 backdrop-blur-sm bg-white/25 shadow-md">
               Cats
             </div>

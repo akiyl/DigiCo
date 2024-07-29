@@ -11,7 +11,10 @@ const HomePage = async () => {
     <>
       <section className=" sticky top-0 ">
         <div className="bg-[url('https://images.unsplash.com/photo-1569591159212-b02ea8a9f239?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] h-screen w-screen bg-center bg-cover sticky top-0 ">
-          <div className="capitalize text-white sticky top-[20vh] left-10 w-[55rem] flex-col flex gap-16">
+          <div
+            className="capitalize text-white sticky top-[20vh] left-10 w-[55rem] flex-col flex gap-16 pl-16
+          "
+          >
             <h1 className="text-[6rem] leading-[85px] font-semibold">
               The happiness of being at home
             </h1>
@@ -30,7 +33,7 @@ const HomePage = async () => {
             </div>
             <Link
               href="/findPets"
-              className="text-xl w-[130px]  text-[#343a40] text-center rounded-lg  px-1 py-1 border-b-2 backdrop-blur-sm bg-white/25 shadow-md  border"
+              className="text-xl w-[130px]  text-[#edf6f9] text-center rounded-lg  px-1 py-1 border-b-2 backdrop-blur-sm bg-white/25 shadow-md  border"
             >
               give a pet
             </Link>

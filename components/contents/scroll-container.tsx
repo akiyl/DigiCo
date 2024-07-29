@@ -22,15 +22,13 @@ const ScrollContainer = ({ pets }: { pets: Pet[] }) => {
           Array.isArray(pets) &&
           pets.map((pet) => (
             <div key={pet.id} className="mb-4 sticky top-0 ">
-              <Link href={`  /pets/${pet.id}`}>
-                <PetContainer
-                  id={pet.id}
-                  name={pet.name}
-                  imageUrl={pet.imgUrl}
-                  description={pet.description}
-                  status={pet.status}
-                />
-              </Link>
+              <PetContainer
+                id={pet.id}
+                name={pet.name}
+                imageUrl={pet.imgUrl}
+                description={pet.description}
+                status={pet.status}
+              />
             </div>
           ))}
       </div>
