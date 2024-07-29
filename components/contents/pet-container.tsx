@@ -22,7 +22,7 @@ const PetCOntainer = ({
       <div className="bg-black ">
         <Link href={`/pets/${id}`}>
           <div
-            className=" h-[59vh] bg-center    no-repeat bg-cover "
+            className=" h-screen bg-center    no-repeat bg-cover "
             style={{ backgroundImage: `url(${imageUrl})` }}
           >
             <div className="capitalize text-white text-8xl pt-40 pl-40   ">

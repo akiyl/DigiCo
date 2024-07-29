@@ -16,7 +16,7 @@ const Pets = async ({ params }: any) => {
 
   return (
     <>
-      <div>
+      <div className="">
         <PetCOntainer
           id={petData.id}
           name={petData.name}
