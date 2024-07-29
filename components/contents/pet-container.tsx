@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 interface PetContainerProps {
-  id: string;
+  id: any;
   name: string;
   imageUrl: string;
   description: string;
