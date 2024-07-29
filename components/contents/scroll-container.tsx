@@ -14,27 +14,24 @@ interface Pet {
 }
 
 const ScrollContainer = ({ pets }: { pets: Pet[] }) => {
-  // const onclick = ({ id }: any) => {
-  //   redirect(`/pets/${id}`);
-  // };
+  // console.log(pets);
   return (
     <div className="w-[80rem]  h-[30rem]">
       <div className="overflow-scroll rounded-3xl  overflow-y-auto h-[35rem]  no-scrollbar ">
         {pets &&
           Array.isArray(pets) &&
           pets.map((pet) => (
-            <Link key={pet.id} href={`  /pets/${pet.id}`}>
-              <section className="mb-4 sticky top-0 ">
+            <div key={pet.id} className="mb-4 sticky top-0 ">
+              <Link href={`  /pets/${pet.id}`}>
                 <PetContainer
                   id={pet.id}
                   name={pet.name}
                   imageUrl={pet.imgUrl}
                   description={pet.description}
                   status={pet.status}
-                  // onClick={onclick(pet.id)}
                 />
-              </section>
-            </Link>
+              </Link>
+            </div>
           ))}
       </div>
     </div>
